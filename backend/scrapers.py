@@ -1,4 +1,4 @@
-"""Scrapers/aggregators for GamerPower, CheapShark, and Reddit deal feeds.
+"""Scrapers/aggregators for GamerPower, CheapShark, and Reddit deal feeds..
 
 Every record passes through validation.passes_all_checks before being returned.
 NOTHING here generates, guesses, or brute-forces codes — it only aggregates real,
