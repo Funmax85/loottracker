@@ -1,0 +1,32 @@
+{
+  "name": "LootTracker — Verified Game Deals",
+  "short_name": "LootTracker",
+  "description": "Verified free game keys, giveaways & deep discounts for Steam, PlayStation & Xbox. Scam-filtered.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a12",
+  "theme_color": "#0a0a12",
+  "categories": ["games", "shopping", "entertainment"],
+  "icons": [
+    { "src": "/static/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/static/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/static/icon-192-mask.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/static/icon-512-mask.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Free Giveaways",
+      "short_name": "Free",
+      "url": "/?filter=free",
+      "description": "Jump straight to 100% free games & giveaways"
+    },
+    {
+      "name": "Deep Discounts",
+      "short_name": "Deals",
+      "url": "/?filter=deep",
+      "description": "Jump to discounts over 70% off"
+    }
+  ]
+}
