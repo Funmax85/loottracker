@@ -42,7 +42,9 @@ def fetch_gamerpower() -> list[dict]:
                              ("ps5", "playstation"), ("xbox-one", "xbox"),
                              ("xbox-series-xs", "xbox"), ("epic-games-store", "steam")):
         try:
-            r = requests.get(GAMERPOWER_API, params={"platform": plat_param, "type": "game.loot"},
+            # No "type" filter -> returns ALL giveaway types (full games, loot,
+            # beta keys, DLC). Restricting to game.loot was hiding free games.
+            r = requests.get(GAMERPOWER_API, params={"platform": plat_param},
                              headers=_HEADERS, timeout=20)
             # GamerPower returns a JSON array, or {"status":...} on empty.
             data = r.json()
